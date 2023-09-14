@@ -1,17 +1,19 @@
-import Blog from "./Components/Blog/Blog"
-import Header from "./Components/Header/Header"
+
+
+import Blogs from "./Components/Blogs/Blogs";
+import Bookmarks from "./Components/Bookmarks/Bookmarks";
+import Header from "./Components/Header/Header";
 
 function App() {
-  
-
   return (
     <>
-     
       <Header></Header>
-      <Blog></Blog>
-  
+      <div className="md:flex">
+        <Blogs></Blogs>
+        <Bookmarks></Bookmarks>
+      </div>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
